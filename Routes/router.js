@@ -23,7 +23,9 @@ router.get('/allproducts',productController.getAllProductController)
 router.post('/register',userController.registerController)
 router.post('/login',userController.loginController)
 
+//get a product
 
+router.get('/get-product/:id',productController.getAProductController)
 // 4) export router
 
 module.exports = router

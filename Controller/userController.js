@@ -38,7 +38,7 @@ exports.loginController= async(req,res)=>{
         if(existingUser){
 
 
-              const token =  jwt.sign({user:existingUser._id},"supersecretkey1234")
+              const token =  jwt.sign({userId:existingUser._id},"supersecretkey1234")
                res.status(200).json({existingUser,token})
         }
         else{
